@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Effective JavaScript: Frogger</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="bootstrap-4.0.0-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+</head>
+<body class="container text-center">
+	<audio id="myAudio" autoplay="autoplay">
+	  <source src="audio/Wonderful Life (Mi Oh My)-Soundtrack.mp3" type="audio/mpeg" />
+	</audio>
+
+    <script src="js/resources.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/engine.js"></script>
+
+    <div class="dialog">
+	    <button type="button" id="open" class="btn btn-primary btn-lg btn-mymodal" data-toggle="modal" data-target="#myModal" style="display: none;"></button>
+	    <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+	        <div class="modal-dialog" role="document">
+	            <div class="modal-content">
+	                <div class="modal-header">
+	                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	                </div>
+	                <div class="modal-body">
+	                    <p>Congrantulations! You Win!</p>
+	                    <img src="images/Star.png" alt="win_image">
+	                </div>
+	                <div class="modal-footer">
+	                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	                    <button type="button" class="btn btn-default" data-dismiss="modal" onclick="restart()">Play again!</button>
+	                </div>
+	            </div>
+	        </div>
+	    </div><!-- /.modal -->
+	</div>
+</body>
+</html>
